@@ -1,0 +1,78 @@
+.profile-dropdown {
+    position: absolute;
+    right: 18px;
+    top: 64px;
+    width: 260px;
+    background: white;
+    color: #111827;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(2, 6, 23, 0.2);
+    padding: 12px;
+    z-index: 60;
+}
+
+.profile-top {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.profile-top img,
+.avatar-md {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    object-fit: cover;
+    background: #f3f4f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-meta .name {
+    font-weight: 700;
+}
+
+.profile-meta .email {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.profile-actions {
+    list-style: none;
+    padding: 8px 0;
+    margin: 0;
+}
+
+.profile-actions li {
+    padding: 10px 8px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.profile-actions li:hover {
+    background: #f1f5f9;
+}
+
+.profile-actions li.danger {
+    color: #b91c1c;
+    font-weight: 600;
+}
+
+.close-dd {
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+    background: transparent;
+    border: none;
+    color: #6b7280;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.close-dd:hover {
+    color: #f1f5f9;
+    transition: all 0.3s ease;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complaint Registered</title>
+</head>
+
+<body style="
+    margin: 0;
+    padding: 0;
+    background-color: #f5f6fa;
+    font-family: Arial, Helvetica, sans-serif;
+  ">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" width="600"
+        style="background: #ffffff; margin-top: 30px; border-radius: 8px; overflow: hidden;">
+        <!-- HEADER -->
+        <tr>
+            <td align="center" style="background: #0d6efd; padding: 25px; color: #ffffff;">
+                <h2 style="margin: 0; letter-spacing: 0.5px;">
+                    Vehicle Theft Complaint Registered
+                </h2>
+            </td>
+        </tr>
+
+        <!-- BODY -->
+        <tr>
+            <td style="padding: 25px; color: #333333;">
+                <p style="font-size: 16px; margin: 0 0 15px 0;">
+                    Hello <strong>{{ownerName}}</strong>,
+                </p>
+
+                <p style="font-size: 15px; line-height: 1.6;">
+                    Your vehicle theft complaint has been successfully registered in our
+                    system. Our team and law enforcement agencies have been notified and
+                    the investigation has been initiated.
+                </p>
+
+                <h3 style="
+            background: #f1f1f1;
+            padding: 12px;
+            border-left: 4px solid #0d6efd;
+            margin-top: 25px;
+            font-size: 16px;
+          ">
+                    Complaint Details
+                </h3>
+
+                <table cellpadding="0" cellspacing="0" width="100%" style="margin-top: 10px;">
+                    <tr>
+                        <td style="padding: 8px 0; font-size: 14px;"><strong>Complaint ID:</strong></td>
+                        <td style="padding: 8px 0; font-size: 14px;">{{complaintId}}</td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding: 8px 0; font-size: 14px;"><strong>Vehicle Plate:</strong></td>
+                        <td style="padding: 8px 0; font-size: 14px;">{{plateNumber}}</td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding: 8px 0; font-size: 14px;"><strong>Vehicle Model:</strong></td>
+                        <td style="padding: 8px 0; font-size: 14px;">{{vehicleModel}}</td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding: 8px 0; font-size: 14px;"><strong>Color:</strong></td>
+                        <td style="padding: 8px 0; font-size: 14px;">{{vehicleColor}}</td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding: 8px 0; font-size: 14px;"><strong>Status:</strong></td>
+                        <td style="padding: 8px 0; font-size: 14px;">
+                            <span style="
+                  background: #ffc107;
+                  padding: 4px 10px;
+                  border-radius: 4px;
+                  color: #000;
+                  font-size: 12px;
+                ">Investigating</span>
+                        </td>
+                    </tr>
+                </table>
+
+                <p style="
+            margin-top: 20px;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #555;
+          ">
+                    You will be notified immediately if your vehicle is detected by any
+                    connected CCTV or mobile scanning device.
+                </p>
+
+                <p style="font-size: 15px; margin-top: 20px;">
+                    Thank you,<br />
+                    <strong>Vehicle Theft Detection System</strong>
+                </p>
+            </td>
+        </tr>
+
+        <!-- FOOTER -->
+        <tr>
+            <td align="center" style="
+          background: #f1f1f1;
+          padding: 15px;
+          font-size: 12px;
+          color: #777;
+        ">
+                © {{year}} Vehicle Theft Detection System. All rights reserved.
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

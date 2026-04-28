@@ -1,0 +1,33 @@
+.map-preview {
+  background-color: var(--card-bg);
+  color: var(--text);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px var(--card-shadow);
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 20px;
+}
+
+.map-preview h2 {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+  color: var(--text-primary);
+}
+
+.map-preview .map-placeholder {
+  height: 250px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+  font-style: italic;
+  transition: all 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode adjustments */
+body[data-theme="dark"] .map-preview .map-placeholder {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text);
+}

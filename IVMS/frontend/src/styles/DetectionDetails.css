@@ -1,0 +1,43 @@
+.details-container {
+    padding: 20px;
+}
+
+.back-btn {
+    margin-bottom: 10px;
+    cursor: pointer;
+    background: #111;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.details-card {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.details-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.details-image {
+    width: 100%;
+    margin-top: 12px;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.map-container {
+    flex: 1;
+    min-width: 350px;
+}
+
+.map {
+    height: 400px;
+    width: 100%;
+    border-radius: 12px;
+}

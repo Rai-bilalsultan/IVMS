@@ -1,0 +1,155 @@
+/* =========================
+   PAGE WRAPPER
+========================= */
+.detections-container {
+    padding: 24px;
+    background: var(--bg-light);
+    min-height: 100vh;
+}
+
+.detections-container h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    color: var(--text-primary);
+}
+
+/* =========================
+   GRID
+========================= */
+.detections-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+/* =========================
+   CARD
+========================= */
+.detection-card {
+    background: var(--card-bg);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px var(--card-shadow);
+    transition: all 0.25s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.detection-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================
+   IMAGE
+========================= */
+.detection-image {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+/* =========================
+   INFO SECTION
+========================= */
+.detection-info {
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.detection-info p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--text);
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.detection-info strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+/* =========================
+   STATUS BADGE
+========================= */
+.status {
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+    display: inline-block;
+}
+
+/* status colors (keep your system consistent) */
+.status.pending {
+    background: #f59e0b;
+    color: white;
+}
+
+.status.detected {
+    background: var(--primary-blue);
+    color: white;
+}
+
+.status.verified {
+    background: #0c884a;
+    color: white;
+}
+
+.status.rejected {
+    background: #ff3b30;
+    color: white;
+}
+
+/* =========================
+   FOOTER ACTION
+========================= */
+.detection-footer {
+    padding: 12px 16px;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detection-footer a {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    background: var(--primary-blue);
+    padding: 7px 12px;
+    border-radius: 8px;
+    transition: 0.2s ease;
+}
+
+.detection-footer a:hover {
+    background: var(--accent-blue);
+}
+
+/* =========================
+   EMPTY STATES
+========================= */
+.detections-container p {
+    opacity: 0.7;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+    .detections-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .detection-image {
+        height: 210px;
+    }
+}

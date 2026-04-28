@@ -1,0 +1,74 @@
+.alert-error {
+    background: #ffdddd;
+    padding: 10px;
+    border-left: 4px solid #ff4d4d;
+    color: #a60000;
+    margin-bottom: 12px;
+    border-radius: 4px;
+}
+
+.search-bar {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-results {
+    max-height: 500px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.search-result-item p {
+    margin: 3px 0;
+}
+
+.alert-success {
+    background: #ddffdd;
+    padding: 10px;
+    border-left: 4px solid #4dff4d;
+    color: #006600;
+    margin-bottom: 12px;
+    border-radius: 4px;
+}
+
+.search-result-item {
+    padding: 12px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background: #fafafa;
+    transition: 0.3s;
+}
+
+.search-result-item:hover {
+    background: #f5f5f52a;
+}
+
+.view-more-link {
+    text-decoration: none;
+    color: var(--text-primary);
+    border-radius: 8px;
+    transition: all 0.15s, color 0.15s, transform 0.08s;
+}
+
+.view-more-link:hover {
+    text-decoration: underline;
+    transition: all 0.15s, color 0.15s, transform 0.08s;
+}
+
+body[data-theme='dark'] .complaint-container, .search-result-item {
+    background-color: var(--card-bg);
+    box-shadow: 0 8px 24px var(--card-shadow);
+    backdrop-filter: blur(12px);
+}
+
+/* body[data-theme='dark'] .view-more-link:hover {
+    text-decoration: underline;
+    transition: all 0.15s, color 0.15s, transform 0.08s;
+} */

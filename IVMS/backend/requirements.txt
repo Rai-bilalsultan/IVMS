@@ -1,0 +1,27 @@
+## Minimal, compulsory backend dependencies for development
+
+# Core framework
+Django==5.0.4
+djangorestframework==3.14.0
+
+# JWT authentication (project settings reference simplejwt)
+djangorestframework-simplejwt
+
+# CORS (needed if frontend runs on separate origin)
+django-cors-headers==3.13.0
+
+# Database driver (traceback used PyMySQL)
+PyMySQL
+# mysqlclient==2.2.4
+
+# Channels + WebSockets
+channels==4.0.0
+channels-redis==4.1.0
+daphne==4.0.0
+
+# Image handling
+Pillow==10.4.0
+
+# Environment and HTTP
+python-dotenv==1.0.1
+requests==2.32.3

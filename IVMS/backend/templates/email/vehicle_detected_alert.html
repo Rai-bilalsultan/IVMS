@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Stolen Vehicle Detected</title>
+</head>
+
+<body style="margin:0;padding:0;background:#f5f6fa;font-family:Arial;">
+    <table align="center" width="600" style="background:#fff;margin-top:30px;border-radius:8px;overflow:hidden;">
+
+        <!-- HEADER -->
+        <tr>
+            <td align="center" style="background:#dc3545;padding:25px;color:#fff;">
+                <h2 style="margin:0;">🚨 Stolen Vehicle Detected</h2>
+            </td>
+        </tr>
+
+        <!-- BODY -->
+        <tr>
+            <td style="padding:25px;color:#333;">
+
+                <p>Hello <strong>{{ownerName}}</strong>,</p>
+
+                <p>
+                    Your reported stolen vehicle has been detected by our system.
+                    Please review the details below and contact authorities immediately.
+                </p>
+
+                <h3 style="background:#f1f1f1;padding:12px;border-left:4px solid #dc3545;">
+                    Detection Details
+                </h3>
+
+                <table width="100%">
+                    <tr>
+                        <td><strong>Plate Number:</strong></td>
+                        <td>{{plateNumber}}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Vehicle:</strong></td>
+                        <td>{{vehicleModel}}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Color:</strong></td>
+                        <td>{{vehicleColor}}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Location:</strong></td>
+                        <td>{{location}}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Time:</strong></td>
+                        <td>{{time}}</td>
+                    </tr>
+                </table>
+
+                <p style="margin-top:20px;">
+                    🚨 Immediate action is recommended.
+                </p>
+
+                <p>
+                    Regards,<br />
+                    <strong>Vehicle Theft Detection System</strong>
+                </p>
+
+            </td>
+        </tr>
+
+        <!-- FOOTER -->
+        <tr>
+            <td align="center" style="background:#f1f1f1;padding:15px;font-size:12px;color:#777;">
+                © {{year}} Vehicle Theft Detection System
+            </td>
+        </tr>
+
+    </table>
+</body>
+
+</html>

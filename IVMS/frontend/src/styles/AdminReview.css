@@ -1,0 +1,217 @@
+/* =========================
+   PAGE LAYOUT
+========================= */
+.admin-review-page {
+  padding: 24px;
+  background-color: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.admin-review-page h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+/* =========================
+   SEARCH BOX
+========================= */
+.search-box {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  background: var(--card-bg);
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px var(--card-shadow);
+}
+
+.search-box input {
+  flex: 1;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text);
+  font-size: 14px;
+}
+
+.search-box input:focus {
+  outline: 1px solid var(--accent-blue);
+}
+
+.search-box button {
+  padding: 10px 16px;
+  background: var(--primary-blue);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.search-box button:hover {
+  background: var(--accent-blue);
+}
+
+/* =========================
+   GRID LAYOUT
+========================= */
+.complaints-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+@media (max-width: 1024px) {
+  .complaints-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   REVIEW CARD
+========================= */
+.review-card {
+  background: var(--card-bg);
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px var(--card-shadow);
+  transition: 0.25s ease;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.review-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-blue);
+}
+
+/* =========================
+   IMAGE
+========================= */
+.vehicle-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* =========================
+   SECTION BLOCKS
+========================= */
+.section {
+  padding-top: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.section h4 {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: var(--text-primary);
+}
+
+.section p {
+  margin: 3px 0;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+/* =========================
+   STATUS BADGE
+========================= */
+.status-box {
+  margin-top: 6px;
+}
+
+.status-badge {
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+/* different statuses */
+.status-badge.pending {
+  background: #6b7280;
+  color: white;
+}
+
+.status-badge.investigating {
+  background: #f59e0b;
+  color: white;
+}
+
+.status-badge.rejected {
+  background: #dc2626;
+  color: white;
+}
+
+/* =========================
+   EXCISE BOX
+========================= */
+.excise-box {
+  padding: 12px;
+  background: rgba(59, 130, 246, 0.08);
+  border-left: 4px solid var(--accent-blue);
+  border-radius: 10px;
+}
+
+/* =========================
+   ACTIONS
+========================= */
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.actions button {
+  flex: 1;
+  padding: 9px;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  color: white;
+}
+
+/* investigate */
+.actions .investigate {
+  background: #f59e0b;
+}
+
+.actions .investigate:hover {
+  filter: brightness(1.1);
+}
+
+/* reject */
+.actions .reject {
+  background: #dc2626;
+}
+
+.actions .reject:hover {
+  filter: brightness(1.1);
+}
+
+/* =========================
+   EMPTY STATE
+========================= */
+.no-data {
+  text-align: center;
+  margin-top: 40px;
+  opacity: 0.6;
+}
+
+/* =========================
+   ERROR TEXT
+========================= */
+.no-match {
+  color: #dc2626;
+  font-size: 13px;
+}
